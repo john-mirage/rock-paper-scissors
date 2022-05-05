@@ -1,13 +1,58 @@
 .game {
-    position: relative;
-    width: 18.1rem;
-    height: 16.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-bottom: 14rem;
+}
+
+.game--step-1 {
+    background-image: url("../images/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+}
+
+.game__button {
+    width: 50%;
+    height: auto;
+}
+
+.game__button:nth-child(1) {
+    text-align: left;
+}
+
+.game__button:nth-child(2) {
+    text-align: end;
+}
+
+.game__button:nth-child(3) {
+    margin-top: 5vw;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.game__triangle {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+@media screen and (min-width: 375px) {
+    .game {
+        max-width: 31.1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .game__button:nth-child(3) {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 564px) {
+    .game {
+        max-width: 50rem;
+    }
+
+    .game__button:nth-child(3) {
+        margin-top: 3.2rem;
+    }
 }

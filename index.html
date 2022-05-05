@@ -38,19 +38,24 @@
                 <p class="header__score-value">12</p>
             </div>
         </header>
-        <div class="game" id="button-group">
-            <img class="game__triangle" src="/src/images/bg-triangle.svg" alt="triangle illustration">
-            <template id="button-template">
-                <button class="button">
-                    <span class="button__border">
-                        <span class="button__surface">
-                            <img class="button__icon" src="" alt="">
-                        </span>
-                    </span>
-                </button>
-            </template>
-        </div>
+        <div class="game game--step-1" id="button-group"></div>
+        <footer class="footer">
+            <button class="footer__button">rules</button>
+        </footer>
     </main>
+
+    <template id="button-template">
+        <div class="game__button">
+            <button class="button">
+                <span class="button__border">
+                    <span class="button__surface">
+                        <img class="button__icon" src="" alt="">
+                    </span>
+                </span>
+            </button>
+        </div>
+    </template>
+
     <script type="module" src="/src/main.ts"></script>
 </body>
 

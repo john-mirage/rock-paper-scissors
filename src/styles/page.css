@@ -13,3 +13,27 @@
     padding-left: 3.2rem;
     padding-right: 3.2rem;
 }
+
+@media screen and (min-width: 375px) {
+    .page__container {
+        max-width: 37.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 564px) {
+    .page {
+        padding-top: 4.4rem;
+    }
+
+    .page__container {
+        max-width: 56.4rem;
+    }
+}
+
+@media screen and (min-width: 806px) {
+    .page__container {
+        max-width: 80.6rem;
+    }
+}
