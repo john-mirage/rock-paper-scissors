@@ -1,0 +1,80 @@
+.button {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    padding: 0;
+    border-radius: 9999px;
+    border: none;
+    background-color: transparent;
+}
+
+.button--rock {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.button--paper {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.button--scissors {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.button__border {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1.6rem;
+    border-radius: 9999px;
+}
+
+.button--rock > .button__border {
+    box-shadow: 0 0.6rem var(--shadow-rock);
+    background: var(--gradient-rock);
+}
+
+.button--paper > .button__border {
+    box-shadow: 0 0.6rem var(--shadow-paper);
+    background: var(--gradient-paper);
+}
+
+.button--scissors > .button__border {
+    box-shadow: 0 0.6rem var(--shadow-scissors);
+    background: var(--gradient-scissors);
+}
+
+.button--rock:active > .button__border {
+    transform: translateY(0.4rem);
+    box-shadow: 0 0.2rem var(--shadow-rock);
+}
+
+.button--paper:active > .button__border {
+    transform: translateY(0.4rem);
+    box-shadow: 0 0.2rem var(--shadow-paper);
+}
+
+.button--scissors:active > .button__border {
+    transform: translateY(0.4rem);
+    box-shadow: 0 0.2rem var(--shadow-scissors);
+}
+
+.button__surface {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: var(--color-white);
+    box-shadow: inset 0 0.6rem var(--shadow-surface);
+}
+
+.button__icon {
+    width: 4.4rem;
+    height: auto;
+    margin: auto;
+}

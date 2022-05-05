@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/project-path/",
+  base: "/rock-paper-scissors/",
   resolve: {
     alias: {
       '@images': resolve(__dirname, 'src/images'),
